@@ -8,6 +8,7 @@ var fs = require('fs');
 
 app.set('views', './views');
 app.set('view engine','pug');
+app.set('port', (process.env.PORT || 5000));
 
 //express will serve up the static domains
 
@@ -64,6 +65,6 @@ app.post('/upload', function(req, res){
 
 });
 
-var server = app.listen(3000, function(){
-  console.log('Server listening on port 3000');
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
