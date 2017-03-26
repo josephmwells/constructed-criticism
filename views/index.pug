@@ -20,14 +20,16 @@ html
         .progress
           div(class="progress-bar" role="progressbar")
       .image-container
-        mixin imageAndCaption(imagePath)
+        mixin imageAndCaption(imagePath, markovText)
           figure
             .figure-img
               img(src='images/' + imagePath)
-            figcaption.
-              Hello World!
-        each fileName in files
-          +imageAndCaption(fileName)
+            figcaption
+              p= markovText
+        -var reverse = files.length;
+        -for (var i = 0; i < files.length; i++)
+          +imageAndCaption(files[i], markov[reverse])
+          -reverse = reverse - 1;
 
 
   script(src="https://code.jquery.com/jquery-2.2.0.min.js")

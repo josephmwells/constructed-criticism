@@ -19,6 +19,7 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 */
+var markovArray = fs.readFileSync(path.join(__dirname, 'public/assets/markov_500.txt')).toString().split("//");
 
 app.get('/', function(req, res){
   var filesArray = fs.readdirSync('uploads');
@@ -26,7 +27,8 @@ app.get('/', function(req, res){
   filesArray.reverse();
   console.log(filesArray);
   res.render('index', {
-    files: filesArray
+    files: filesArray,
+    markov: markovArray
   });
 });
 

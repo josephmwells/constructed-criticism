@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  letter-spacing: .15em;
+  letter-spacing: .10em;
 }
 
 html,
@@ -26,6 +26,10 @@ body {
   padding-top: 20px;
   width: 50%;
   margin: 0 auto;
+  }
+
+  .image-container p{
+    font-size: 2em;
   }
 }
 
@@ -53,13 +57,20 @@ body {
 
 .image-container figure{
   width: 100%;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #0012ff;
+  margin: 10px;
 }
 
 .image-container figure img{
   width: 100%;
+  padding: 10px;
 }
 
-.image-container figcaption{
-  padding-top: 20px;
-  padding-bottom: 20px;
+.image-container p{
+  padding: 10px;
+  text-align: center;
+
+  font-size: 0.8em;
 }
