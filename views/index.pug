@@ -14,7 +14,9 @@ html
   body
     .main-container
       .nav-container
-        a(href='/') construct
+        ul
+          li: a(href='/') construct
+          li: a(href='/about') about
       .upload-container
         input(id="upload-input" type="file" name="uploads[]")
         .progress

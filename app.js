@@ -20,7 +20,7 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 */
-var markovArray = fs.readFileSync(path.join(__dirname, 'public/assets/markov_500.txt')).toString().split("//");
+var markovArray = fs.readFileSync(path.join(__dirname, 'public/assets/markov_01.txt')).toString().split("//");
 
 app.get('/', function(req, res){
   var filesArray = fs.readdirSync('uploads');
@@ -31,6 +31,10 @@ app.get('/', function(req, res){
     files: filesArray,
     markov: markovArray
   });
+});
+
+app.get('/about', function(req, res){
+  res.render('about');
 });
 
 app.post('/upload', function(req, res){

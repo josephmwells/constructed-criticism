@@ -5,6 +5,7 @@
   margin: 0;
   text-decoration: none;
   letter-spacing: .10em;
+  list-style: none;
 }
 
 html,
@@ -31,11 +32,26 @@ body {
   .image-container p{
     font-size: 2em;
   }
+
+  .nav-container a {
+    padding-right: 20px;
+  }
+
 }
 
 .nav-container{
   width: 100%;
   padding-bottom: 10px;
+}
+
+.nav-conatiner ul {
+}
+
+.nav-container li {
+  display: inline-block;
+}
+.nav-container a {
+  padding-right: 10px;
 }
 
 .upload-container{
