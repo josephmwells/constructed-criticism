@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  letter-spacing: .15em;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+}
+
+.main-container{
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px){
+  .main-container {
+  padding-top: 20px;
+  width: 50%;
+  margin: 0 auto;
+  }
+}
+
+.nav-container{
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.upload-container{
+  width: 100%;
+}
+
+#upload-input{
+  padding-bottom: 10px;
+}
+
+.progress{
+  width: 100%;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container figure{
+  width: 100%;
+}
+
+.image-container figure img{
+  width: 100%;
+}
+
+.image-container figcaption{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

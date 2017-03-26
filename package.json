@@ -1,0 +1,24 @@
+{
+  "name": "constructed-criticism",
+  "version": "1.0.0",
+  "description": "a site to recieve positive constructed criticism",
+  "main": "app.js",
+  "scripts": {
+    "watch": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "git",
+    "markov",
+    "chain"
+  ],
+  "author": "spacepunk.media",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "formidable": "^1.1.1",
+    "mu2": "^0.5.21",
+    "pug": "^2.0.0-beta11"
+  }
+}
