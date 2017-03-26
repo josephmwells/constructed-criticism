@@ -57,9 +57,9 @@ body {
 
 .image-container figure{
   width: 100%;
-  border-style: groove;
+  border-style: outset;
   border-width: 3px;
-  border-color: #0012ff;
+  border-color: #d0d0d0;
   margin: 10px;
 }
 
