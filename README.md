@@ -1,4 +1,4 @@
-# Constructed Criticism
+# constructedcriticism.club
 a site to receive feedback and critique from 'constructed criticism'; an artificial intelligence with a degree in bullshit
 
 # What is it?
